@@ -4,9 +4,8 @@ from time import sleep
 from sys import exit
 from random import randint
 
-from GPIOclass import GPIOpin
-
-from generic import base
+from GPIO.GPIOclass import GPIOpin
+from common.generic import base
 
 
 def main():
