@@ -6,5 +6,7 @@ Installation/Configuration:
 Append the PYTHONPATH with the directory to the repo on the file system with the following command:
 
 +------------------------------------------------------------+
+
 | $ export PYTHONPATH="$PYTHONPATH:"/path/to/gpio_py34_tools |
+
 +------------------------------------------------------------+
