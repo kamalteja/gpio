@@ -52,7 +52,7 @@ class GPIOpin(GPIOboard):
             self.gpioPin = pin
         except AssertionError:
             print(
-                'Error: Provided Pin: "%s", is not an integer or integer is greater thatn 40' % str(pin))
+                'Error: Provided Pin: "%s", is not an integer or integer is greater that 40' % str(pin))
         except Exception as e:
             print('UnknownException: %s' % str(e))
 
