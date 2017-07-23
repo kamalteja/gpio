@@ -1,8 +1,8 @@
 #!/usr/bin/python3.4
 
 #import
-import os
 import time
+import subprocess
 
 #from
 from sys import exit
@@ -28,7 +28,8 @@ class base:
         '''
         Return CPU temperature as a float
         '''
-        self.res = os.popen('vcgencmd measure_temp').readline()
+        temp = subprocess.Popen(["vcgencmd","measure_temp"], stdout=subprocess.PIPE)
+        self.res = temp.communicate()[0].decode(encoding='ISO-8859-1')
         return(float(self.res.replace("temp=", "").replace("'C\n", "")))
 
     def currentTime(self, format=None):
