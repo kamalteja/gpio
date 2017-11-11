@@ -1,11 +1,12 @@
 #!/usr/bin/python3.4
 
-#import
+# import
 import time
 import subprocess
 
-#from
+# from
 from sys import exit
+
 
 class base:
     '''
@@ -28,7 +29,8 @@ class base:
         '''
         Return CPU temperature as a float
         '''
-        temp = subprocess.Popen(["vcgencmd","measure_temp"], stdout=subprocess.PIPE)
+        temp = subprocess.Popen(
+            ["vcgencmd", "measure_temp"], stdout=subprocess.PIPE)
         self.res = temp.communicate()[0].decode(encoding='ISO-8859-1')
         return(float(self.res.replace("temp=", "").replace("'C\n", "")))
 

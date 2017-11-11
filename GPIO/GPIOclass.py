@@ -34,7 +34,7 @@ class GPIOpin(GPIOboard):
     [7, 11, 12, 13, 15, 16, 18, 22, 29, 31, 32, 33, 35, 36, 38, 40]
     '''
 
-    def __init__(self, pin, pinMode, boardType, val=False):
+    def __init__(self, pin, pinMode, boardType='BOARD', val=False):
         self.setGPIOboardType(boardType)
         self.setGPIOpin(pin)
         self.setGPIOmode(pinMode)
