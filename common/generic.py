@@ -15,7 +15,7 @@ class base:
 
     def __init__(self):
         self.tempThreshold = 40.0
-        self.plinus = 10.0  # plus or minus tempThreshold
+        self.plinus = 5.0  # plus or minus tempThreshold
         self.sup_formats = ["time", "localtime", "asctime"]
         self.format = self.sup_formats[0]
 
